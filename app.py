@@ -1,28 +1,42 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(_name_)
 
-VIZ = {
-    "dashboard1": "https://public.tableau.com/views/OlympicPerformanceAnalysis_17931144556200/Dashboard1",
-    "dashboard2": "https://public.tableau.com/views/OlympicPerformanceAnalysis_17931144556200/Dashboard2",
-    "story": "https://public.tableau.com/views/OlympicPerformanceAnalysis_17931144556200/Story1",
-}
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-@app.route("/")
-def index():
-    return render_template("index.html")
+@app.route('/sheet1')
+def sheet1():
+    return render_template('sheet1.html', title="Medals by Country")
 
-@app.route("/dashboard1")
+@app.route('/sheet2')
+def sheet2():
+    return render_template('sheet2.html', title="Medals Trend")
+
+@app.route('/sheet3')
+def sheet3():
+    return render_template('sheet3.html', title="Investment vs Medals")
+
+@app.route('/sheet4')
+def sheet4():
+    return render_template('sheet4.html', title="Medals by Region")
+
+@app.route('/sheet5')
+def sheet5():
+    return render_template('sheet5.html', title="Avg Medals by Sport Category")
+
+@app.route('/dashboard1')
 def dashboard1():
-    return render_template("dashboard.html", title="Medal and Sport Performance", viz_url=VIZ["dashboard1"])
+    return render_template('dashboard1.html', title="Dashboard 1")
 
-@app.route("/dashboard2")
+@app.route('/dashboard2')
 def dashboard2():
-    return render_template("dashboard.html", title="Performance and Regional Efficiency", viz_url=VIZ["dashboard2"])
+    return render_template('dashboard2.html', title="Dashboard 2")
 
-@app.route("/story")
+@app.route('/story')
 def story():
-    return render_template("dashboard.html", title="Olympic Performance Story", viz_url=VIZ["story"])
+    return render_template('story.html', title="Story View")
 
-if __name__ == "__main__":
+if _name_ == '_main_':
     app.run(debug=True)
