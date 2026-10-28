@@ -20,7 +20,7 @@
     <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='Olympic_Analysis_17931782712870' path='/workbooks' revision='1.3' />
+  <repository-location id='Olympic_Analysis_17931782712870' path='/workbooks' revision='1.4' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -1198,8 +1198,8 @@
           </layout-options>
           <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97766' id='31' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97766' id='35' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
                 <zone h='5866' id='18' type-v2='title' w='98698' x='651' y='1117'>
                   <zone-style>
                     <format attr='border-color' value='#444444' />
@@ -1381,8 +1381,8 @@
           </layout-options>
           <size maxheight='850' minheight='850' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97766' id='35' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
+            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97766' id='39' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
                 <zone h='5866' id='23' type-v2='title' w='98698' x='651' y='1117'>
                   <zone-style>
                     <format attr='border-color' value='#444444' />
@@ -1490,7 +1490,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='37'>
-    <window class='worksheet' name='Medals by Country'>
+    <window class='worksheet' maximized='true' name='Medals by Country'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1513,7 +1513,7 @@
       </cards>
       <simple-id uuid='{92E89269-BF47-43D6-A748-749CC0CE2ABC}' />
     </window>
-    <window class='worksheet' maximized='true' name='Medals Trend'>
+    <window class='worksheet' name='Medals Trend'>
       <cards>
         <edge name='left'>
           <strip size='160'>
