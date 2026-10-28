@@ -1,0 +1,1659 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='11b5c0ad32d225d2c1b3d628c3c521bea96de245134dcae7deb11c28edeb5eee' _.fcp.WorkbookFingerprinting.true...creator-author-id='1f73464b79b8ce1c236f9fc65f49e6790d3ef6fa781aadc4718ecd6d09f5ef06' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='25533d3f6a30a48fc57721a49da1aea00c68d60d613d15d0f541129f20e1eb07' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='9e1ca8259a9ad4aa8a54042a75fc1a9a8fb9271b0f3855bd9a660b17d86f6930' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Olympic_Analysis_17931782712870' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='athletes+' inline='true' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='athletes' name='textscan.0gr1mne0wypt9b101qpgq1yymf7o'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/alika/Downloads/athletes.csv' dataRefreshTime='' directory='C:/Users/alika/Downloads' filename='C:/Users/alika/AppData/Local/Temp/TableauTemp/15d2k1o0sajqh717sk2cv0kg9wya/athletes.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0gr1mne0wypt9b101qpgq1yymf7o' name='athletes.csv' table='[C:\Users\alika\Downloads\athletes#csv]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:H8747:no:A1:H8747:1' header='yes' locale='en_GB' separator=','>
+              <column datatype='string' name='Athlete_ID' ordinal='0' />
+              <column datatype='string' name='Athlete_Name' ordinal='1' />
+              <column datatype='string' name='Country' ordinal='2' />
+              <column datatype='string' name='Sport' ordinal='3' />
+              <column datatype='string' name='Sport_Category' ordinal='4' />
+              <column datatype='integer' name='Year' ordinal='5' />
+              <column datatype='string' name='Season' ordinal='6' />
+              <column datatype='integer' name='Medals_Won' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0gr1mne0wypt9b101qpgq1yymf7o' name='medal_results.csv' table='[medal_results#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='string' name='Season' ordinal='1' />
+              <column datatype='string' name='Country' ordinal='2' />
+              <column datatype='string' name='Region' ordinal='3' />
+              <column datatype='string' name='Host_Country' ordinal='4' />
+              <column datatype='integer' name='Gold' ordinal='5' />
+              <column datatype='integer' name='Silver' ordinal='6' />
+              <column datatype='integer' name='Bronze' ordinal='7' />
+              <column datatype='integer' name='Total_Medals' ordinal='8' />
+              <column datatype='real' name='Investment_Million_USD' ordinal='9' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Athlete_ID]' value='[athletes.csv].[Athlete_ID]' />
+          <map key='[Athlete_Name]' value='[athletes.csv].[Athlete_Name]' />
+          <map key='[Bronze]' value='[medal_results.csv].[Bronze]' />
+          <map key='[Country (medal_results.csv)]' value='[medal_results.csv].[Country]' />
+          <map key='[Country]' value='[athletes.csv].[Country]' />
+          <map key='[Gold]' value='[medal_results.csv].[Gold]' />
+          <map key='[Host_Country]' value='[medal_results.csv].[Host_Country]' />
+          <map key='[Investment_Million_USD]' value='[medal_results.csv].[Investment_Million_USD]' />
+          <map key='[Medals_Won]' value='[athletes.csv].[Medals_Won]' />
+          <map key='[Region]' value='[medal_results.csv].[Region]' />
+          <map key='[Season (medal_results.csv)]' value='[medal_results.csv].[Season]' />
+          <map key='[Season]' value='[athletes.csv].[Season]' />
+          <map key='[Silver]' value='[medal_results.csv].[Silver]' />
+          <map key='[Sport]' value='[athletes.csv].[Sport]' />
+          <map key='[Sport_Category]' value='[athletes.csv].[Sport_Category]' />
+          <map key='[Total_Medals]' value='[medal_results.csv].[Total_Medals]' />
+          <map key='[Year (medal_results.csv)]' value='[medal_results.csv].[Year]' />
+          <map key='[Year]' value='[athletes.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H8747:no:A1:H8747:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Athlete_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Athlete_ID]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Athlete_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Athlete_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Athlete_Name]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Athlete_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sport]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Sport</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sport_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sport_Category]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Sport_Category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medals_Won</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Medals_Won]</local-name>
+            <parent-name>[athletes.csv]</parent-name>
+            <remote-alias>Medals_Won</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (medal_results.csv)]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season (medal_results.csv)]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (medal_results.csv)]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Host_Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Host_Country]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Host_Country</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gold]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Gold</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Silver</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Silver]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Silver</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bronze</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bronze]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Bronze</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Medals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Medals]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Total_Medals</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investment_Million_USD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Investment_Million_USD]</local-name>
+            <parent-name>[medal_results.csv]</parent-name>
+            <remote-alias>Investment_Million_USD</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medal_results.csv_5E7827C8118046FABFD020B520162325]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Athlete ID' datatype='string' name='[Athlete_ID]' role='dimension' type='nominal' />
+      <column caption='Athlete Name' datatype='string' name='[Athlete_Name]' role='dimension' type='nominal' />
+      <column caption='Avg Medals per Athlete' datatype='real' name='[Calculation_1251579391488000]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Medals_Won])/COUNTD([Athlete_ID])' />
+      </column>
+      <column caption='Country (medal results.csv)' datatype='string' name='[Country (medal_results.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Host Country' datatype='string' name='[Host_Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Investment Million USD' datatype='real' name='[Investment_Million_USD]' role='measure' type='quantitative' />
+      <column caption='Medals Won' datatype='integer' name='[Medals_Won]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+      <column caption='Sport Category' datatype='string' name='[Sport_Category]' role='dimension' type='nominal' />
+      <column caption='Total Medals' datatype='integer' name='[Total_Medals]' role='measure' type='quantitative' />
+      <column caption='Year (medal results.csv)' datatype='integer' name='[Year (medal_results.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='athletes.csv' datatype='table' name='[__tableau_internal_object_id__].[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]' role='measure' type='quantitative' />
+      <column caption='medal_results.csv' datatype='table' name='[__tableau_internal_object_id__].[medal_results.csv_5E7827C8118046FABFD020B520162325]' role='measure' type='quantitative' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+      <group caption='Action (Country (medal results.csv))' hidden='true' name='[Action (Country (medal results.csv))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country (medal_results.csv)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Season (medal results.csv),Year (medal results.csv))' hidden='true' name='[Action (Season (medal results.csv),Year (medal results.csv))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Season (medal_results.csv)]' />
+          <groupfilter function='level-members' level='[Year (medal_results.csv)]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='Data/olympic_project/athletes+.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3' table='[Extract].[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]' type='table' />
+            <relation name='medal_results.csv_5E7827C8118046FABFD020B520162325' table='[Extract].[medal_results.csv_5E7827C8118046FABFD020B520162325]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Athlete_ID]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Athlete_ID]' />
+            <map key='[Athlete_Name]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Athlete_Name]' />
+            <map key='[Bronze]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Bronze]' />
+            <map key='[Country (medal_results.csv)]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Country]' />
+            <map key='[Country]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Country]' />
+            <map key='[Gold]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Gold]' />
+            <map key='[Host_Country]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Host_Country]' />
+            <map key='[Investment_Million_USD]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Investment_Million_USD]' />
+            <map key='[Medals_Won]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Medals_Won]' />
+            <map key='[Region]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Region]' />
+            <map key='[Season (medal_results.csv)]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Season]' />
+            <map key='[Season]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Season]' />
+            <map key='[Silver]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Silver]' />
+            <map key='[Sport]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Sport]' />
+            <map key='[Sport_Category]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Sport_Category]' />
+            <map key='[Total_Medals]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Total_Medals]' />
+            <map key='[Year (medal_results.csv)]' value='[medal_results.csv_5E7827C8118046FABFD020B520162325].[Year]' />
+            <map key='[Year]' value='[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3].[Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Athlete_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Athlete_ID]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Athlete_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>athletes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8746</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Athlete_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Athlete_Name]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Athlete_Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>athletes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>242</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>athletes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sport]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Sport</remote-alias>
+              <ordinal>3</ordinal>
+              <family>athletes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sport_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sport_Category]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Sport_Category</remote-alias>
+              <ordinal>4</ordinal>
+              <family>athletes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>athletes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Season]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>6</ordinal>
+              <family>athletes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Medals_Won</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Medals_Won]</local-name>
+              <parent-name>[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]</parent-name>
+              <remote-alias>Medals_Won</remote-alias>
+              <ordinal>7</ordinal>
+              <family>athletes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year (medal_results.csv)]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>8</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Season (medal_results.csv)]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>9</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (medal_results.csv)]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>10</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>11</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Host_Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Host_Country]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Host_Country</remote-alias>
+              <ordinal>12</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gold]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Gold</remote-alias>
+              <ordinal>13</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Silver</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Silver]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Silver</remote-alias>
+              <ordinal>14</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bronze</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bronze]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Bronze</remote-alias>
+              <ordinal>15</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Medals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Medals]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Total_Medals</remote-alias>
+              <ordinal>16</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Investment_Million_USD</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Investment_Million_USD]</local-name>
+              <parent-name>[medal_results.csv_5E7827C8118046FABFD020B520162325]</parent-name>
+              <remote-alias>Investment_Million_USD</remote-alias>
+              <ordinal>17</ordinal>
+              <family>medal_results.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>424</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Season (medal_results.csv):nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Summer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Winter&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;South America&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Europe/Asia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='athletes.csv' id='athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3'>
+            <properties context=''>
+              <relation connection='textscan.0gr1mne0wypt9b101qpgq1yymf7o' name='athletes.csv' table='[C:\Users\alika\Downloads\athletes#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:H8747:no:A1:H8747:1' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Athlete_ID' ordinal='0' />
+                  <column datatype='string' name='Athlete_Name' ordinal='1' />
+                  <column datatype='string' name='Country' ordinal='2' />
+                  <column datatype='string' name='Sport' ordinal='3' />
+                  <column datatype='string' name='Sport_Category' ordinal='4' />
+                  <column datatype='integer' name='Year' ordinal='5' />
+                  <column datatype='string' name='Season' ordinal='6' />
+                  <column datatype='integer' name='Medals_Won' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3' table='[Extract].[athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3]' type='table' />
+            </properties>
+          </object>
+          <object caption='medal_results.csv' id='medal_results.csv_5E7827C8118046FABFD020B520162325'>
+            <properties context=''>
+              <relation connection='textscan.0gr1mne0wypt9b101qpgq1yymf7o' name='medal_results.csv' table='[medal_results#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Season' ordinal='1' />
+                  <column datatype='string' name='Country' ordinal='2' />
+                  <column datatype='string' name='Region' ordinal='3' />
+                  <column datatype='string' name='Host_Country' ordinal='4' />
+                  <column datatype='integer' name='Gold' ordinal='5' />
+                  <column datatype='integer' name='Silver' ordinal='6' />
+                  <column datatype='integer' name='Bronze' ordinal='7' />
+                  <column datatype='integer' name='Total_Medals' ordinal='8' />
+                  <column datatype='real' name='Investment_Million_USD' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='medal_results.csv_5E7827C8118046FABFD020B520162325' table='[Extract].[medal_results.csv_5E7827C8118046FABFD020B520162325]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Country]' />
+                <expression op='[Country (medal_results.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year]' />
+                <expression op='[Year (medal_results.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='athletes.csv_B7A1E609A36B4C5188D6E5B1A19557F3' />
+            <second-end-point object-id='medal_results.csv_5E7827C8118046FABFD020B520162325' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+      <datasources>
+        <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+        <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]'>
+        <groupfilter function='level-members' level='[none:Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]'>
+        <groupfilter function='level-members' level='[none:Season (medal_results.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_4522F8A8C5E949BC86C91F6DBA5C0D20]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Avg Medals by Sport Category' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_722296537FA34DAFB91E85DDF5A1E2CA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Medals by Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4_4DF00CCE7A9E483CB856F8DDBBF7CFA6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Medals Trend' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_F63CA22A2E04479BB017D726DE2AD8BA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Investment vs Medals' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg Medals by Sport Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+            <column caption='Athlete ID' datatype='string' name='[Athlete_ID]' role='dimension' type='nominal' />
+            <column caption='Avg Medals per Athlete' datatype='real' name='[Calculation_1251579391488000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Medals_Won])/COUNTD([Athlete_ID])' />
+            </column>
+            <column caption='Medals Won' datatype='integer' name='[Medals_Won]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+            <column caption='Sport Category' datatype='string' name='[Sport_Category]' role='dimension' type='nominal' />
+            <column caption='Year (medal results.csv)' datatype='integer' name='[Year (medal_results.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sport_Category]' derivation='None' name='[none:Sport_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1251579391488000]' derivation='User' name='[usr:Calculation_1251579391488000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[Action (Season (medal results.csv),Year (medal results.csv))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_4DF00CCE7A9E483CB856F8DDBBF7CFA6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Season (medal_results.csv)]' />
+              <groupfilter function='level-members' level='[Year (medal_results.csv)]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Sport_Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[Action (Season (medal results.csv),Year (medal results.csv))]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]' />
+              <text column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Sport_Category:nk]</rows>
+        <cols>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]</cols>
+      </table>
+      <simple-id uuid='{CAF5979C-966F-4196-BB2B-389C505835FC}' />
+    </worksheet>
+    <worksheet name='Investment vs Medals'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+            <column caption='Country (medal results.csv)' datatype='string' name='[Country (medal_results.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Investment Million USD' datatype='real' name='[Investment_Million_USD]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+            <column caption='Total Medals' datatype='integer' name='[Total_Medals]' role='measure' type='quantitative' />
+            <column-instance column='[Country (medal_results.csv)]' derivation='None' name='[none:Country (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Investment_Million_USD]' derivation='Sum' name='[sum:Investment_Million_USD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total_Medals]' derivation='Sum' name='[sum:Total_Medals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' />
+              <size column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' />
+              <text column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Country (medal_results.csv):nk]' />
+              <lod column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Country (medal_results.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]</rows>
+        <cols>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Investment_Million_USD:qk]</cols>
+      </table>
+      <simple-id uuid='{C0D0156C-E441-420F-B100-B83735E3D5FD}' />
+    </worksheet>
+    <worksheet name='Medals Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+            <column caption='Total Medals' datatype='integer' name='[Total_Medals]' role='measure' type='quantitative' />
+            <column caption='Year (medal results.csv)' datatype='integer' name='[Year (medal_results.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year (medal_results.csv)]' derivation='None' name='[none:Year (medal_results.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Total_Medals]' derivation='Sum' name='[sum:Total_Medals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]' />
+              <text column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]</rows>
+        <cols>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Year (medal_results.csv):ok]</cols>
+      </table>
+      <simple-id uuid='{2BC2B498-05FE-4FCE-BD52-D558CD1282F7}' />
+    </worksheet>
+    <worksheet name='Medals by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+            <column caption='Country (medal results.csv)' datatype='string' name='[Country (medal_results.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+            <column caption='Total Medals' datatype='integer' name='[Total_Medals]' role='measure' type='quantitative' />
+            <column caption='Year (medal results.csv)' datatype='integer' name='[Year (medal_results.csv)]' role='dimension' type='ordinal' />
+            <column-instance column='[Country (medal_results.csv)]' derivation='None' name='[none:Country (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_Medals]' derivation='Sum' name='[sum:Total_Medals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[Action (Season (medal results.csv),Year (medal results.csv))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4_4DF00CCE7A9E483CB856F8DDBBF7CFA6]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Season (medal_results.csv)]' />
+              <groupfilter function='level-members' level='[Year (medal_results.csv)]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Country (medal_results.csv):nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[Action (Season (medal results.csv),Year (medal results.csv))]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Country (medal_results.csv):nk]</rows>
+        <cols>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]</cols>
+      </table>
+      <simple-id uuid='{606AB767-22D6-452C-A221-13CF5F882ADC}' />
+    </worksheet>
+    <worksheet name='Medals by Region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+            <column caption='Total Medals' datatype='integer' name='[Total_Medals]' role='measure' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_Medals]' derivation='Sum' name='[sum:Total_Medals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]</column>
+            <column>[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' />
+              <wedge-size column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' />
+              <text column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' />
+              <text column='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{90AE68CB-E1D4-4114-A588-561ECD75183A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Medal and Sport Performance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+        <column caption='Season (medal results.csv)' datatype='string' name='[Season (medal_results.csv)]' role='dimension' type='nominal' />
+        <column caption='Total Medals' datatype='integer' name='[Total_Medals]' role='measure' type='quantitative' />
+        <column-instance column='[Season (medal_results.csv)]' derivation='None' name='[none:Season (medal_results.csv):nk]' pivot='key' type='nominal' />
+        <column-instance column='[Total_Medals]' derivation='Sum' name='[sum:Total_Medals:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97766' id='17' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
+            <zone h='5866' id='18' type-v2='title' w='98698' x='651' y='1117'>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91900' id='15' param='vert' type-v2='layout-flow' w='98698' x='651' y='6983'>
+              <zone h='91900' id='7' param='horz' type-v2='layout-flow' w='98698' x='651' y='6983'>
+                <zone h='91900' id='5' type-v2='layout-basic' w='85679' x='651' y='6983'>
+                  <zone h='41376' id='3' name='Avg Medals by Sport Category' w='85679' x='651' y='6983'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='50524' id='9' name='Medals by Country' w='42752' x='651' y='48359'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='50524' id='10' name='Medals Trend' w='42927' x='43403' y='48359'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='160' h='91900' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='13019' x='86330' y='6983'>
+                  <zone h='9078' id='8' name='Avg Medals by Sport Category' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]' type-v2='color' w='13019' x='86330' y='6983'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9218' id='11' name='Medals Trend' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]' type-v2='color' w='13019' x='86330' y='16061'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='12430' id='19' name='Medals Trend' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]' type-v2='filter' values='database' w='13019' x='86330' y='25279'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9637' id='20' name='Medals Trend' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' type-v2='filter' values='database' w='13019' x='86330' y='37709'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Medal and Sport Performance</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97766' id='27' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
+                <zone h='5866' id='18' type-v2='title' w='98698' x='651' y='1117'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41376' id='3' is-fixed='true' name='Avg Medals by Sport Category' w='85679' x='651' y='6983'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9078' id='8' name='Avg Medals by Sport Category' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]' type-v2='color' w='13019' x='86330' y='6983'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50524' id='9' is-fixed='true' name='Medals by Country' w='42752' x='651' y='48359'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12430' id='19' mode='checkdropdown' name='Medals Trend' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]' type-v2='filter' values='database' w='13019' x='86330' y='25279'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9637' id='20' name='Medals Trend' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' type-v2='filter' values='database' w='13019' x='86330' y='37709'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50524' id='10' is-fixed='true' name='Medals Trend' w='42927' x='43403' y='48359'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9218' id='11' name='Medals Trend' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]' type-v2='color' w='13019' x='86330' y='16061'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D84C275A-DF10-4F86-88BB-6E0D762E3AF6}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Performance and Regional Efficiency</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='athletes+' name='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vy7wdc0vdcy6k16jlxny1f0dmuw'>
+        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97766' id='22' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
+            <zone h='5866' id='23' type-v2='title' w='98698' x='651' y='1117'>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91900' id='20' param='vert' type-v2='layout-flow' w='98698' x='651' y='6983'>
+              <zone h='91900' id='7' param='horz' type-v2='layout-flow' w='98698' x='651' y='6983'>
+                <zone h='91900' id='5' type-v2='layout-basic' w='85679' x='651' y='6983'>
+                  <zone h='91900' id='3' name='Investment vs Medals' w='42839' x='651' y='6983'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='91900' id='10' name='Medals by Region' w='42840' x='43490' y='6983'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='160' h='91900' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='13019' x='86330' y='6983'>
+                  <zone h='17597' id='8' name='Investment vs Medals' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' type-v2='color' w='13019' x='86330' y='6983'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='17597' id='9' name='Investment vs Medals' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' type-v2='size' w='13019' x='86330' y='24580'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='20391' id='24' name='Medals by Region' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' type-v2='filter' values='database' w='13019' x='86330' y='42177'>
+                    <zone-style>
+                      <format attr='border-color' value='#444444' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Performance and Regional Efficiency</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97766' id='31' param='vert' type-v2='layout-flow' w='98698' x='651' y='1117'>
+                <zone h='5866' id='23' type-v2='title' w='98698' x='651' y='1117'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91900' id='3' is-fixed='true' name='Investment vs Medals' w='42839' x='651' y='6983'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17597' id='8' name='Investment vs Medals' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' type-v2='color' w='13019' x='86330' y='6983'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17597' id='9' name='Investment vs Medals' pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' type-v2='size' w='13019' x='86330' y='24580'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20391' id='24' mode='checkdropdown' name='Medals by Region' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' type-v2='filter' values='database' w='13019' x='86330' y='42177'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91900' id='10' is-fixed='true' name='Medals by Region' w='42840' x='43490' y='6983'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A8DCCA93-29D7-4E0C-8526-32992AEC06C6}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Olympic Performance Story</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97766' id='1' param='vert' removable='false' type-v2='layout-flow' w='98698' x='651' y='1117'>
+            <zone h='4609' id='3' type-v2='title' w='98698' x='651' y='1117' />
+            <zone h='14106' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98698' x='651' y='5726' />
+            <zone h='79051' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98698' x='651' y='19832'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Medals and sport performance,1992 to 2026' captured-sheet='Dashboard 1' id='2' />
+                  <story-point caption='The United States and China lead the Medal Table' captured-sheet='Medals by Country' id='3' />
+                  <story-point caption='Shooting &amp; Archery gives the most medals per athlete' captured-sheet='Avg Medals by Sport Category' id='4' />
+                  <story-point caption='Higher investment tends to bring more medals' captured-sheet='Investment vs Medals' id='5' />
+                  <story-point caption='Europe/Asia wins the largest share of medals' captured-sheet='Medals by Region' id='6' />
+                  <story-point caption='Medal totals stay fairly steady across the years' captured-sheet='Medals Trend' id='7' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{1C93D23D-98F2-49B9-9A64-B6F454DB1CD7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Medals by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{92E89269-BF47-43D6-A748-749CC0CE2ABC}' />
+    </window>
+    <window class='worksheet' name='Medals Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Season (medal_results.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BAABBD8-0D66-4392-85FC-3B82D726D55C}' />
+    </window>
+    <window class='worksheet' name='Investment vs Medals'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[sum:Total_Medals:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A915894-0D75-4A60-8FA1-270031573213}' />
+    </window>
+    <window class='worksheet' name='Medals by Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1E2908F8-03B9-4C1C-A71E-475DED7EACCA}' />
+    </window>
+    <window class='worksheet' name='Avg Medals by Sport Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vy7wdc0vdcy6k16jlxny1f0dmuw].[usr:Calculation_1251579391488000:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3A3174A-45D5-40B3-B80D-43540ED28F0E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Avg Medals by Sport Category' />
+        <viewpoint name='Medals Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Medals by Country' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{43D3D8B7-0A54-493E-99F5-CB9F517C9A0A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Investment vs Medals' />
+        <viewpoint name='Medals by Region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{32C336B4-3093-4C6A-9471-343BC60903EB}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{4D66B841-280D-4A02-8262-4F22A6757880}' />
+    </window>
+  </windows>
+</workbook>
