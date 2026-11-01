@@ -51,6 +51,8 @@ Olympic-performance-analysis/
 ├── data/               # Raw Olympic datasets
 ├── tableau/            # Tableau packaged workbook (.twbx)
 └── README.md           # Project documentation
+```
+---
 
 Visualizations & Worksheets
 Top Medal Leaders: Horizontal Bar Chart
@@ -63,16 +65,19 @@ Regional Performance: Pie Chart
 
 Funding Analysis: Scatter Plot Chart
 
-Dashboards
-Dashboard 1 (Executive Overview): Integrates Top Medal Leaders, Medal History, and Regional Performance.
+## Dashboards
 
-Dashboard 2 (Detailed Analytics): Integrates Category Breakdown and Funding Analysis.
+### Executive Overview
+<img src="https://github.com/user-attachments/assets/3357f4f6-acb4-4cd3-82ed-113b1386ee69" width="100%" />
 
-Screenshorts
+> **Included Views:** `Top Medal Leaders`, `Medal History`, and `Regional Performance`
 
+---
 
+### Detailed Analytics
+<img src="https://github.com/user-attachments/assets/f4f5101f-d8e7-4c49-8cdf-b18beda46fc4" width="100%" />
 
-
+> **Included Views:** `Category Breakdown` and `Funding Analysis`
 
 How to Run Locally
 1. Clone the repository
