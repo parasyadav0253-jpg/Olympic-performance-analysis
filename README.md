@@ -100,9 +100,9 @@ Navigate to http://127.0.0.1:5000
 
 | Metric | Result |
 | :--- | :--- |
-| **Amount of data loaded** | `[rows / extract size]` |
-| **Data filters used** | Season, Year |
-| **Calculated fields** | `[count]` |
+| **Amount of data loaded** | `270,000+ rows / 12.5 MB` |
+| **Data filters used** | Season, Year (1992-2026)|
+| **Calculated fields** | `6 Calculated Fields]` |
 | **Visualisations** | 5 sheets, 2 dashboards, 1 story |
 
 ---
