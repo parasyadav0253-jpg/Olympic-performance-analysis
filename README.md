@@ -92,3 +92,40 @@ pip install -r requirements.txt
 python app.py
 5. Open in browser
 Navigate to http://127.0.0.1:5000
+
+---
+
+
+## Performance Testing
+
+| Metric | Result |
+| :--- | :--- |
+| **Amount of data loaded** | `[rows / extract size]` |
+| **Data filters used** | Season, Year |
+| **Calculated fields** | `[count]` |
+| **Visualisations** | 5 sheets, 2 dashboards, 1 story |
+
+---
+
+## 📚 Documentation
+
+* **`Tableau Public Workbook:`** Integrated directly via embedded iframe/JS API.
+* **`Dataset Source:`** Kaggle Olympic Games Dataset (1896–2026).
+* **`Flask API Endpoints:`**
+  * `GET /` — Renders the primary dashboard portal.
+  * `GET /health` — Service health check endpoint.
+
+---
+
+## 🚀 Future Scope
+
+- [ ] **`ML Medal Predictor:`** Integrate a Machine Learning model (Scikit-Learn) to forecast country medal counts for upcoming Olympic Games.
+- [ ] **`Live API Integration:`** Connect to official Olympic APIs for real-time medal updates during active games.
+- [ ] **`Athlete Search Portal:`** Add a dedicated lookup feature for individual athlete career stats and medal history.
+- [ ] **`Dockerization:`** Containerize the Flask application using Docker for single-command deployment to AWS / Render.
+
+---
+
+## 📜 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information. Educational & portfolio project by **`Paras Yadav`**.
