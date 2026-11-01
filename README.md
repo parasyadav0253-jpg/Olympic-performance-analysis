@@ -68,20 +68,24 @@ Dashboard 1 (Executive Overview): Integrates Top Medal Leaders, Medal History, a
 
 Dashboard 2 (Detailed Analytics): Integrates Category Breakdown and Funding Analysis.
 
+Screenshorts
+
+<img width="2748" height="1404" alt="1" src="https://github.com/user-attachments/assets/045330c5-381a-467f-9e46-bf0ec6ca2f4c" />
+
+<img width="2744" height="1402" alt="2" src="https://github.com/user-attachments/assets/42d4b7e6-4e2b-4ce9-94cf-70b61cae96e7" />
+
+
+
 How to Run Locally
 1. Clone the repository
-Bash
 git clone [https://github.com/parasyadav0253-jpg/Olympic-performance-analysis.git](https://github.com/parasyadav0253-jpg/Olympic-performance-analysis.git)
 cd Olympic-performance-analysis
 2. (Optional) Create a virtual environment
-Bash
 python -m venv venv
 venv\Scripts\activate
 3. Install dependencies
-Bash
 pip install -r requirements.txt
 4. Run the application
-Bash
 python app.py
 5. Open in browser
 Navigate to http://127.0.0.1:5000
